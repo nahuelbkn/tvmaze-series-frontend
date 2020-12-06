@@ -9,7 +9,6 @@ export default class NavBar extends React.Component
         return (
            <>
                 <nav className="navbar">
-                    {/* TODO poner logo */}
                     <a 
                         className="navbar-logo" 
                         target="_blank"
