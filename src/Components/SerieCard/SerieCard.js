@@ -14,7 +14,7 @@ export default class SerieCard extends React.Component
                     {console.log(serieObject)}
 
                     {
-                        serieObject.image && (
+                        serieObject.image && serieObject.image.medium && (
                             <img 
                                 className="serie-img" 
                                 src={serieObject.image.medium} 
