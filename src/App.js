@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-d
 
 
 import './App.css';
+import FavsPage from "./Components/FavsPage/FavsPage";
 import HomePage from "./Components/HomePage/HomePage";
 import NotFoundPage from "./Components/NotFoundPage/NotFoundPage";
 export default class App extends React.Component
@@ -15,7 +16,7 @@ export default class App extends React.Component
           <Switch>
             <Route exact path="/" ><HomePage /></Route>
             <Route exact path="/not-found"><NotFoundPage /></Route>
-            {/* <Route exact path="/favs"></Route> */}
+            <Route exact path="/favs"><FavsPage /></Route>
             <Route path="/*" ><Redirect to="/not-found" /></Route>
           </Switch>
         </Router>

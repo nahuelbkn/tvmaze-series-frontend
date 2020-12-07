@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 import SearchBox from "./../SearchBox/SearchBox";
 
@@ -22,6 +23,11 @@ export default class NavBar extends React.Component
                         />
                     </a>
                     { this.props.runSearch && ( <SearchBox runSearch={this.props.runSearch} /> )}
+                    {this.props.back && (
+                        <button className="navbar-back">
+                            <NavLink to="/" className="navlink-back">Volver</NavLink>
+                        </button>
+                    )}
                 </nav>
                 <div className="secondary-bar">
                     {/* A futuro esto barra secundaria contendrá funcionalidades, actualmente es solo visual. */}

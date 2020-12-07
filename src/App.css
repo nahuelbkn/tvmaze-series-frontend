@@ -83,7 +83,9 @@ div.App {
     outline: none;
 }
 
-.search-box .search-favs {
+
+
+.search-favs, .navbar-back {
     margin-left: 13px;
     width: 20%;
     height: 2.25rem;
@@ -97,15 +99,15 @@ div.App {
     color: #fefefe;
 }
 
-.search-box .search-favs:hover {
+.search-favs:hover, .navbar-back:hover {
     background-color: #51a8a0;
 }
 
-.search-box .search-favs:focus {
+.search-favs:focus, .navbar-back:focus {
     outline: none;
 }
 
-.favs-link {
+.favs-link, .navlink-back {
     text-decoration: none;
     color: #fefefe;
 }
@@ -150,6 +152,20 @@ div.App {
     border: none;
     margin-top: 25px;
     margin-left: 10px;
+}
+
+.navbar-back {
+    margin-left: 50%;
+    max-width: 10%;
+    height: 2.25rem;
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 19px 19px 19px 19px;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    font-size: 1.06rem;
+    cursor: pointer;
+    background-color: #3C948B;
+    color: #fefefe;
 }
 
 

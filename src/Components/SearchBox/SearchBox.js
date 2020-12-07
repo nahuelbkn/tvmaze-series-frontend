@@ -42,9 +42,9 @@ export default class SearchBox extends React.Component
                     </button>
                 </form>
                 
-                {/* <button className="search-favs">
+                <button className="search-favs">
                     <Link to="/favs" className="favs-link">Favoritas</Link>
-                </button> */}
+                </button>
             </div>
         )
     }
