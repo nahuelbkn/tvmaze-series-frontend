@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 export default class SearchBox extends React.Component
@@ -40,6 +41,10 @@ export default class SearchBox extends React.Component
                         {" Buscar"}
                     </button>
                 </form>
+                
+                {/* <button className="search-favs">
+                    <Link to="/favs" className="favs-link">Favoritas</Link>
+                </button> */}
             </div>
         )
     }

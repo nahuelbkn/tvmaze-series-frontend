@@ -15,6 +15,7 @@ export default class App extends React.Component
           <Switch>
             <Route exact path="/" ><HomePage /></Route>
             <Route exact path="/not-found"><NotFoundPage /></Route>
+            {/* <Route exact path="/favs"></Route> */}
             <Route path="/*" ><Redirect to="/not-found" /></Route>
           </Switch>
         </Router>
