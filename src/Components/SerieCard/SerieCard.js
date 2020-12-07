@@ -9,6 +9,10 @@ export default class SerieCard extends React.Component
         return (
             serieObject && (
                 <div className="serie-card">
+
+                    {/* TODO borrar */}
+                    {console.log(serieObject)}
+
                     {
                         serieObject.image && (
                             <img 
@@ -45,7 +49,7 @@ export default class SerieCard extends React.Component
                         {
                             serieObject.genres && (
                                 serieObject.genres.map(gender=>{
-                                    return <span className="serie-gender">{gender}</span>
+                                    return <span key={Math.random()} className="serie-gender">{gender}</span>
                                 })
                             )
                             
